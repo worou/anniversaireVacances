@@ -36,4 +36,19 @@ result+=’<br />
 document.querySelector(’#anniv_liste’).innerHTML = result;
 return nb_anniv;
 }
+$("#couleur").bind( "keyup", function() {
+masque_couleur($(this).val());
+});
+Il va ensuite créer la fonction qui va lui permettre de cacher les boutons des couleurs ne
+correspondant pas au texte du champ et l’ajouter au même fichier :
+function masque_couleur(color) {
+$(’#couleurs_proposees button’).each(function( index ) {
+if ($(this).html().indexOf(color) > -1) {
+$(this).show();
+}
+else {
+$(this).hide();
+}
+});
+}
 
