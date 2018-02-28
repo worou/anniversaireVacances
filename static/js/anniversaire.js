@@ -1,4 +1,4 @@
-
+﻿
 function anniv_ajout(){
 anniv_personne = document.querySelector(’#anniv_personne’).value;
 anniv_date = document.querySelector(’#anniv_date’).value;
@@ -36,3 +36,4 @@ result+=’<br />
 document.querySelector(’#anniv_liste’).innerHTML = result;
 return nb_anniv;
 }
+
