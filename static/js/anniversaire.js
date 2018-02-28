@@ -1,9 +1,10 @@
 
-function anniv_ajout() {
+function anniv_ajout(){
 anniv_personne = document.querySelector(’#anniv_personne’).value;
 anniv_date = document.querySelector(’#anniv_date’).value;
 couleur = document.querySelector(’#couleur’).value;
 anniversaire = {
+	//text........
 ’anniv_personne’: anniv_personne,
 ’anniv_date’: anniv_date,
 ’couleur’: couleur
@@ -22,7 +23,7 @@ stockés dans le localstorage du navigateur */
 function anniv_liste() {
 nb_anniv = anniv_get_nb_anniv();
 result = "";
-if (nb_anniv == 0) {
+if(nb_anniv == 0) {
 result = ’<h3>Aucun anniversaire enregistré<h3>’;
 }
 for (i=0;i<nb_anniv;i++) {
